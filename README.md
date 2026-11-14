@@ -54,7 +54,7 @@
 ### 3. TelecomAgent · AIOps
 
 - **业务链路**：告警接入 → 时间窗压缩 → 拓扑关联 → 根因定位 → 影响面 → 案例检索 → 派单 / 人工复核
-- **技术结构**：Python 拓扑压缩与规则引擎；LangGraph 条件分支；TypeScript React NOC 大屏
+- **技术结构**：Python 拓扑压缩与规则引擎；LangGraph 条件分支；Node.js 实时告警网关（WebSocket / 滑动窗口）；TypeScript React NOC 大屏
 - **评估结果**：223 条合成告警压缩为 10 起事件（95.5%）；3/3 根因命中；影响面召回 100%
 - **工程细节**：低置信度事件自动转人工；离线分析结果可回放
 
